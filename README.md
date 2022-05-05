@@ -8,6 +8,9 @@ Repositorio para almacenar los ejemplos de código de los Proyectos del Ciclo 1 
   - Estructuras Condicionales
   - Estructuras Acíclicas o Iterativas
 - __Semana 3__ - Estructuras de Datos
+  - Estructuras de Datos (Listas)
+  - Tuplas y Colecciones
+  - Diccionarios
 - __Semana 4__ - Librerías Principales de Python
 - __Semana 5__ - Subprogramas y Funciones
 - __Semana 6__ - Manejo de Archivos
