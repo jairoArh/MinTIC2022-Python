@@ -13,15 +13,17 @@ while not exited:
         option_numpy = '1'
         while option_numpy != '0':
             menu_numpy = '''
-                <<<<<<<<<MENU PRINCIPAL>>>>>>>>
-                    1. Funcion 1 numpy
+                <<<<<<<<<MENU numpy>>>>>>>>
+                    1. Generar Matriz con aleatorios
                     2. Funcion 2 numpy
                     0. Salir
             ''' 
             print(menu_numpy)
             option_numpy = input('Digite su Opcion.. ')
             if option_numpy == '1':
-                print('Opcion 1 de numpy')
+                rows = eval(input('Numero de Filas..: '))
+                cols = eval(input('Numero de Columnas..: '))
+                print(f'Filas={rows}\nColumas={cols}')
             elif option_numpy == '2':
                 print('Opcion 2 de numpy')
 
