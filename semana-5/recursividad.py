@@ -1,15 +1,33 @@
 from signal import pause
 
 
-def do_mult(num_one, num_two):
-    result = num_one * num_two
+def do_mult(multiplicando, multiplicador):
+    if multiplicador == 1:
+        return multiplicando
 
-    return result
+    return multiplicando + do_mult(multiplicando, multiplicador-1)
 
 def do_div(num_one, num_two):
-    #TODO calcula y retorna la division del numero y mayor entre el menor
-    pass
+   #TODO
 
+   pass
+
+def do_fact(n):
+    if n == 1 or n == 0:
+        return 1
+    return n * do_fact(n-1)
+
+def do_mcd( dividendo, divizor):
+    if dividendo % divizor == 0:
+        return divizor
+
+    return do_mcd( divizor, dividendo % divizor )
+
+def do_pow( fix, pow ):
+    if pow == 0:
+        return 1
+    
+    return fix * do_pow(fix, pow - 1)
 
 def mult():
     num_one = eval(input('Numero Uno..: '))
@@ -18,27 +36,39 @@ def mult():
 
 def div():
     #TODO leer dos números y visualizar el resultado del llamado a la función respectiva
-    pass
+    do_div(3,4)
 
 def pow():
-    #TODO leer la base y la potencia y visualiza el resultado del llamado a la función respectiva
-    pass
+    fix = eval(input('Base..: '))
+    pow = eval(input('Potencia..: '))
+
+    print(f'{fix} elevado a la {pow} es {do_pow(fix,pow)}')
 
 def sum():
     #TODO leer un número y vualizar el resultado de la función que calcula la sumatoria del numero
     pass
 
 def fact():
-    #TODO leer un número y vualizar el resultado de la función que calcula el factorial del numero
-    pass
+   num = eval(input('Numero...: '))
+   print(f'El Factorial de {num} es {do_fact(num)}')
 
 def mcd():
-    #TODO leer dos números y visualizar el resultado de la función que calcula el MCD de los dos numeros
-    pass
+    num_one = eval(input('Numero Uno..: '))
+    num_two = eval(input('Numero Dos..: '))
+    print(f'El MCD de {num_one} y {num_two} es {do_mcd(num_one,num_two)}')
+
+def do_fibo(n):
+    if n == 1 or n == 2:
+        return 1
+        
+    return do_fibo(n-1) + do_fibo(n-2)
+
 
 def fibo():
-    #TODO leer un número n y visualizar el n-esimo término de la serie de fibonacci
-    pass
+    # 1 1 2 3 5 8 13 21 34 55 89 144 233
+    # 1 2 3 4 5 6 7  8  9  10 11 12  13
+   num = eval(input('Elemento de Fibonacci...: '))
+   print(f'el {num}-esimo término es {do_fibo(num)}')
 
 def cousing():
     #TODO leer un número y visualizar un mensaje que indique si el número es primo o no dependiendo del llamado a la respectiva función
