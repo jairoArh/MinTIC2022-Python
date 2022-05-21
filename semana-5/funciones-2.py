@@ -18,8 +18,9 @@ def load_data():
     return less,hihger
 
 if __name__ == '__main__':
+
     num_one, num_two = load_data()
 
     for num in range(num_one,num_two+1):
-        if is_cousing(num):
+        if is_cousing(num) == True:
             print( num )
