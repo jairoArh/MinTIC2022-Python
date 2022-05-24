@@ -1,5 +1,6 @@
 from signal import pause
-
+from tools import do_fact
+from tools import do_mcd
 
 def do_mult(multiplicando, multiplicador):
     if multiplicador == 1:
@@ -12,17 +13,13 @@ def do_div(num_one, num_two):
 
    pass
 
-def do_fact(n):
-    if n == 1 or n == 0:
-        return 1
-    return n * do_fact(n-1)
-
-def do_mcd( dividendo, divizor):
-    if dividendo % divizor == 0:
-        return divizor
-
-    return do_mcd( divizor, dividendo % divizor )
-
+'''
+5! = 5 * 4!  
+4! = 4 * 3!
+3! = 3 = 2!
+2! = 2 * 1!
+1! = 1
+'''
 def do_pow( fix, pow ):
     if pow == 0:
         return 1
@@ -70,9 +67,30 @@ def fibo():
    num = eval(input('Elemento de Fibonacci...: '))
    print(f'el {num}-esimo término es {do_fibo(num)}')
 
+def isCousing(n):
+    cont = 2
+    cousing = True
+    while cont <= n / 2 and cousing:
+        cousing = not( n % cont == 0 )
+        cont += 1
+
+    return cousing
+
+def is_cousing(n,cont=2):
+    if n % cont == 0 and n != 2:
+        return False
+    elif cont > n / 2:
+        return True
+    cont += 1
+    return is_cousing(n,cont)
+
 def cousing():
     #TODO leer un número y visualizar un mensaje que indique si el número es primo o no dependiendo del llamado a la respectiva función
-    pass
+    num = eval(input('Digite Número..: '))
+    if is_cousing(num):
+        print (f'El Número {num} es Primo')
+    else:
+        print (f'El Número {num} No es Primo')
 
 
 def main_menu():
