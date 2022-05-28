@@ -1,0 +1,120 @@
+ [
+    {
+        "idCustomer": "43545643",
+        "lastname": "Fernández Sánchez",
+        "name": "María Cristina",
+        "dateBirthday": "1965/05/23",
+        "accounts" : [
+            {   
+                "number": "762534",
+                "dateOpen": "2019/06/25",
+                "residue": 2000000,
+                "state": true
+            },
+            {
+                "number": "9038483",
+                "dateOpen": "2020/03/12",
+                "residue": 1500000,
+                "state": false
+            }
+        ]
+    },
+    {
+        "idCustomer": "83373755",
+        "lastname": "Morales Sierra",
+        "name": "Viviana Andrea",
+        "dateBirthday": "1975/10/21",
+        "accounts" : [
+            {   
+                "number": "9098301",
+                "dateOpen": "2020/01/12",
+                "residue": 500000,
+                "state": true
+            },
+            {
+                "number": "589388744",
+                "dateOpen": "2020/04/19",
+                "residue": 750000,
+                "state": false
+            },
+            {
+                "number": "3294944",
+                "dateOpen": "2018/09/23",
+                "residue": 4800000,
+                "state": true
+            }
+        ]
+    },
+    {
+        "idCustomer": "74892783",
+        "lastname": "Pedraza López",
+        "name": "Sergio Alejandro",
+        "dateBirthday": "2000/07/29",
+        "accounts" : [
+            {   
+                "number": "73849545",
+                "dateOpen": "2019/02/27",
+                "residue": 2000000,
+                "state": true
+            },
+            {
+                "number": "9474753",
+                "dateOpen": "2018/7/20",
+                "residue": 1000000,
+                "state": false
+            },
+            {
+                "number": "97727273",
+                "dateOpen": "2019/10/11",
+                "residue": 8900000,
+                "state": true
+            }
+        ]
+    },
+    {
+        "idCustomer": "93897394",
+        "lastname": "Arcos Iriarte",
+        "name": "Jorge Enrique",
+        "dateBirthday": "1983/11/30",
+        "accounts": [
+            {
+                "number": "9937475",
+                "dateOpen": "2018-10-10",
+                "residue": 234000,
+                "state": false
+            }
+        ]
+    },
+    {
+        "idCustomer": "94747535",
+        "lastname": "Chaparro Sinisterra",
+        "name": "Julio Ernesto",
+        "dateBirthday": "1962/12/07",
+        "accounts" : [
+            {   
+                "number": "9839494",
+                "dateOpen": "2019/03/27",
+                "residue": 2000000,
+                "state": true
+            },
+            {
+                "number": "132434",
+                "dateOpen": "2020/7/11",
+                "residue": 1800000,
+                "state": true
+            },
+            {
+                "number": "954563",
+                "dateOpen": "2019/3/18",
+                "residue": 10000000,
+                "state": true
+            },
+            {
+                "number": "8993845",
+                "dateOpen": "2020/11/18",
+                "residue": 89000,
+                "state": false
+            }
+        ]
+    }
+]

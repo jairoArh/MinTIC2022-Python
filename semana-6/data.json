@@ -1,0 +1,63 @@
+[{
+    "id":"3535563",
+    "name":"Luisa Maria",
+    "surName":"Lopez Vargas",
+    "age":32,
+    "gender":false,
+    "birthday":"1991-06-21",
+    "address":{
+        "street":15,
+        "number":34,
+        "city":"Bogotá D.C"
+    },
+    "phones":["6087735419","3128939210","3045390921"],
+    "jobs":[
+        {
+            "company":"Nestle",
+            "salary":2350000.43,
+            "dateBegin":"2017-08-23",
+            "dateEnd":"2019-11-12"
+        },{
+            "company":"PSL",
+            "salary":3200000,
+            "dateBegin":"2019-10-10",
+            "dateEnd":"2020-03-12"
+        },{
+            "company":"MercadoLibre",
+            "salary":4300000,
+            "dateBegin":"2019-03-23"
+        }
+    ]
+  },
+  {
+     "id":"3535563",
+    "name":"Luisa Maria",
+    "surName":"Lopez Vargas",
+    "age":32,
+    "gender":false,
+    "birthday":"1991-06-21",
+    "address":{
+        "street":15,
+        "number":34,
+        "city":"Bogotá D.C"
+    },
+    "phones":["6087735419","3128939210","3045390921"],
+    "jobs":[
+        {
+            "company":"Nestle",
+            "salary":2350000.43,
+            "dateBegin":"2017-08-23",
+            "dateEnd":"2019-11-12"
+        },{
+            "company":"PSL",
+            "salary":3200000,
+            "dateBegin":"2019-10-10",
+            "dateEnd":"2020-03-12"
+        },{
+            "company":"MercadoLibre",
+            "salary":4300000,
+            "dateBegin":"2019-03-23"
+        }
+    ]
+  }]
+
