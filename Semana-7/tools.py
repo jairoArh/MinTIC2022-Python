@@ -72,5 +72,23 @@ def calc_avg(vec):
     
     raise TypeError('[calc_avg]El argumento no es una lista')
 
+'''
+5! = 5 * 4!
+4! = 4 * 3!
+3! = 3 * 2!
+2! = 2 * 1!
+'''
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    
+    return n * factorial(n - 1)
 
 
+def get_combinations(n,r):
+    if isinstance(n,int) and isinstance(r,int):
+
+        return factorial(n) / ( factorial(r) * factorial(n-r))
+
+    raise TypeError('[get_combinatios]Valor de argumento no es un numero')
